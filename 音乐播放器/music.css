@@ -1,0 +1,106 @@
+body{
+	background: url(img/bj.jpg) no-repeat;
+	background-size: cover;
+}
+/*设置横幅的宽高背景*/
+.banner{
+	width: 1000px;
+	height: 250px;
+	background: url(img/background.jpg) no-repeat;
+	margin: 80px;
+	opacity: 0.6;
+	box-shadow: 10px 15px 15px 1px black;
+	position: relative;/*让子元素相对于父元素定位*/
+}
+/* 设置横幅的li样式 */
+.banner ul li{
+	list-style: none;
+	display: inline-block;
+	position: absolute;/*绝对定位，先对于其父元素定位*/
+}
+/* 设置图片的样式 */
+.banner ul li img{
+	border-radius: 50%;
+	cursor: pointer;/*鼠标变手势*/
+}
+.m1{
+	top: 30px;
+	left: 220px;
+}
+.m2{
+	top: 140px;
+	left: 330px;
+}
+.m3{
+	top: 70px;
+	left: 450px;
+}
+.m4{
+	top: 45px;
+	left: 610px;
+}
+.m5{
+	top: 160px;
+	left: 770px;
+}
+
+/* 播放器样式 */
+.music{
+	width: 550px;
+	height: 120px;
+	background-color: black;
+	position: fixed;
+	left: 0px;
+	bottom: 50px;
+	opacity: 0.8;
+	box-shadow:  10px 15px 15px 1px black;
+}
+.music .m-img{
+	margin-top: 15px;
+	margin-left: 10px;
+	float: left;
+}
+.music .m-text{
+	width: 170px;
+	float: left;
+	color: white;
+	margin-top: 47px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.music .m-btn a{
+	width: 50px;
+	height: 50px;
+	float: left;
+	background: url(img/button.jpg);
+	margin-top: 33px;
+	margin-left: 10px;
+}
+.music .m-btn .m-prey{
+	background-position: -20px -22px;
+}
+.music .m-btn .m-play{
+	background-position: 125px -22px;
+}
+.music .m-btn .m-next{
+	background-position: 70px -22px;
+}
+.music .m-btn .m-pause{
+	background-position: -75px -24px;
+}/* 暂停按钮 方便js的动态调用 */
+.music .m-close{
+	width: 20px;
+	height: 120px;
+	float: right;
+	background: url(img/close.jpg);
+	background-size: 20px 120px;
+	opacity: 0.7;
+	cursor: pointer;/* 鼠标变手势 */
+}
+.music .m-open{
+	background: url(img/open.jpg);
+	background-size: 20px 120px;
+	opacity: 0.7;
+	cursor: pointer;/* 鼠标变手势 */
+
+}

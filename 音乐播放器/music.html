@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>音乐播放器</title>
+	<link rel="stylesheet" type="text/css" href="music.css">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+</head>
+<body>
+<!-- 主体页面 -->
+<div class="banner">
+ <ul>
+  <li class="m1" datasrc="mp3/1.mp3" title="周杰伦-魔术与歌曲"> <img src="img/1.jpg" width="80">
+  </li>
+  <li class="m2" datasrc="mp3/2.mp3" title="陈奕迅-遥远的她"> <img src="img/2.jpg" width="90">
+  </li>
+  <li class="m3" datasrc="mp3/3.mp3" title="张国荣-月亮代表我的心"> <img src="img/3.jpg" width="150">
+  </li>
+  <li class="m4" datasrc="mp3/4.mp3" title="刘德华-忘情水"> <img src="img/4.jpg" width="90">
+  </li>
+  <li class="m5" datasrc="mp3/5.mp3" title="张学友-哪有一天不想你"> <img src="img/5.jpg" width="80">
+  </li>
+ </ul>
+</div>
+
+<!-- 播放器 -->
+<div class="music">
+ <div class="m-img">
+ <img src="img/1.jpg" width="150" height="90">
+ </div>
+  <div class="m-text">周杰伦-魔术与歌曲</div>
+  <div class="m-btn">
+   <a href="#" class="m-prey" title="上一首"></a>
+   <a href="#" class="m-play" title="播放"></a>
+   <a href="#" class="m-next" title="下一首"></a>
+  </div>
+ <div class="m-close" title="收起"></div>
+ <audio class="m-mp3" src="mp3/1.mp3"></audio>
+</div>
+
+<!-- 链接到jquery -->
+<script type="text/javascript" src="jquery.js"></script>
+<!--链接到js-->
+<script type="text/javascript" src="music.js"></script>
+</body>
+</html>
